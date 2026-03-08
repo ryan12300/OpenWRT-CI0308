@@ -29,9 +29,9 @@ fi
 
 CFG_FILE="./package/base-files/files/bin/config_generate"
 #修改默认IP地址
-sed -i "s/192\.168\.[0-9]*\.[0-9]*/$WRT_IP/g" $CFG_FILE
+sed -i "s/192\.168\.[0-9]*\.[0-9]*/192.168.10.252/g" $CFG_FILE
 #修改默认主机名
-sed -i "s/hostname='.*'/hostname='$WRT_NAME'/g" $CFG_FILE
+sed -i "s/hostname='.*'/hostname='QWRT'/g" $CFG_FILE
 
 #配置文件修改
 echo "CONFIG_PACKAGE_luci=y" >> ./.config
